@@ -25,8 +25,8 @@ def check(word1, word2):
  
  
 # driver code
-s1 = "listen"
-s2 = "silent"
+s1 = "gost"
+s2 = "soft"
 print(check(s1, s2))
 
 
