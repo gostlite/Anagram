@@ -11,22 +11,22 @@
 
 
 # Python3 program for the above approach
-from collections import Counter
  
 # function to check if two strings are
 # anagram or not
-def check(word1, word2):
+def check(firstwor, secondword):
    
     # implementing counter function
-    if(Counter(word1) == Counter(word2)):
+    if(sorted(firstword.replace(" ", "").lower()) == sorted(secondword.replace(" ", "").lower())):
         return True
     else:
         return False
  
  
+ 
 # driver code
-s1 = "gost"
-s2 = "soft"
-print(check(s1, s2))
+word1 = input("Write a word or sentence: ")
+word2 = input("Write the second word or sentence: ")
+print(check(word1, word2))
 
 
